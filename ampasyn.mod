@@ -12,9 +12,6 @@ UNITS {
          R = (k-mole)  (joule/degC)
 }
 
-
-INDEPENDENT {v FROM -100 TO 50 WITH 50 (mV)}
-
 NEURON {
 	SUFFIX ampa
 	USEION na READ nai,ena  WRITE ina
@@ -46,6 +43,7 @@ ASSIGNED {
            ik       (mA/cm2)
            iampa    (mA/cm2)
            ampasyn  (1)
+           v        (mV)
 }
 
 
