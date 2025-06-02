@@ -1,10 +1,8 @@
-<html><pre>
-NEURON mod files from the paper:
+# NEURON mod files from the paper
 
 M. Migliore, C. Cannia, CC Canavier, A modeling study suggesting a
 possible pharmacological target to mitigate the effects of ethanol on
-reward-related dopaminergic signaling, J. Neurophysiol., in press
-(2008).
+reward-related dopaminergic signaling, *J. Neurophysiol.*, in press (2008).
 
 We use a realistic computational model of dopaminergic neurons in vivo
 to suggest that ethanol, through its effects on Ih, modifies the
@@ -17,39 +15,46 @@ effects of ethanol that are postulated to mediate alcohol abuse and
 addiction, targeting the specific HCN genes expressed in dopaminergic
 neurons.
 
-Usage:
+## Usage
 
-The file fig3.hoc reproduces the results shown in Fig.3 of the paper.
+The file `fig3.hoc` reproduces the results shown in Fig.3 of the paper.
 
 To start the simulation:
 
 ---
-Under unix systems:
-to compile the mod files use the command 
-nrnivmodl 
-and run the simulation hoc file with the command 
-nrngui fig3.hoc
+
+### Under unix systems
+
+To compile the mod files use the command
+`nrnivmodl`
+and run the simulation hoc file with the command
+`nrngui fig3.hoc`
 
 ---
-Under Windows systems:
-to compile the mod files use the "mknrndll" command.
+
+### Under Windows systems
+
+To compile the mod files use the "mknrndll" command.
 A double click on the simulation file
-fig3.hoc 
+`fig3.hoc`
 will open the simulation window.
 
 ---
-Under MAC OS X:
+
+### Under MAC OS X
 
 Drag and drop the extracted folder onto the mknrndll icon. Drag and
-drop the mosinit.hoc onto the nrngui icon.
----
-Once the simulation is running:
+drop the `mosinit.hoc` onto the nrngui icon.
 
-Each simulation (control, 50mM, 100mM) takes about 800sec of real time
+---
+
+### Once the simulation is running
+
+Each simulation (control, 50mM, 100mM) takes about 800 sec of real time
 and can be started by pressing the button so labeled.  After they are
 run you should have a graph that looks like:
 
-<img src="./screenshot.jpg" alt="screenshot">
+![screenshot](./screenshot.jpg)
 
 Questions on how to use this model
 should be directed to michele.migliore@pa.ibf.cnr.it
@@ -58,4 +63,5 @@ Changelog
 ---------
 2022-12: ampasyn.mod: drop INDEPENDENT block for v
          Required for upcoming NEURON 9.0.0
-</pre></html>
+
+2025-06-02: Standardized to Markdown.
